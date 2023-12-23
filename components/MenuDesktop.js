@@ -12,7 +12,7 @@ export default function MenuDesktop() {
   const [notesData,setNotesData] = useState(null)
   useEffect(()=>{
     async function fetchNotesData() {
-      const res = await fetch('http://localhost:3000/api/notes', {
+      const res = await fetch('https://notes-app-peach-eta.vercel.app/api/notes', {
         cache: "no-store",
       });
       const data = await res.json()
