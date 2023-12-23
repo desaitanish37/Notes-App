@@ -11,7 +11,7 @@ export default function EditNoteForm({ id, title, noteData }) {
 
   const handleSubmit = async () => {
     try {
-      const res = await fetch(`http://localhost:3000/api/notes/${id}`, {
+      const res = await fetch(`https://notes-app-peach-eta.vercel.app/api/notes/${id}`, {
         method: "PUT",
         headers: {
           "Content-type": "application/json",
